@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Proyecto de aplicacion movil para el desarrollo de una lista de tareas utilizando el paquete getx y consumir una api en desarrollo.
 
 A few resources to get you started if this is your first Flutter project:
 

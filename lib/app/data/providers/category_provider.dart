@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:trello_app/app/data/providers/base_provider.dart';
 
 import '../models/category_model.dart';
 
-class CategoryProvider extends GetConnect {
+class CategoryProvider extends BaseProvider {
   @override
   onInit() {
-    httpClient.baseUrl = "http://192.168.1.82:8080/";
-    debugPrint(httpClient.baseUrl);
     httpClient.defaultDecoder = (map) {
       if (map is Map<String, dynamic>) return Category.fromJson(map);
       if (map is List) {
